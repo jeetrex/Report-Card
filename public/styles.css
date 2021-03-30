@@ -1,0 +1,62 @@
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+h1,
+h3 {
+	font-weight: 800;
+}
+h5 {
+	font-size: small;
+	font-weight: 600;
+}
+
+.school-details {
+	padding: 2% 0 0 0;
+	text-align: center;
+}
+.session {
+	padding: 2% 0 0 0;
+}
+.student-details {
+	padding: 2% 0 0 0;
+}
+.row-detail {
+	font-weight: 600;
+	font-size: medium;
+}
+.marks {
+	text-align: center;
+}
+.detail {
+	font-size: medium;
+	font-weight: 600;
+	text-align: center;
+}
+.signatures {
+	padding: 2%;
+}
+
+.logo {
+	height: 120px;
+	width: auto;
+}
+
+.marks-detail{
+       font-size: 10px;
+       	font-weight: 600;
+	text-align: center;
+}
+
+@media print {
+	body {
+		width: 21cm;
+		height: 29.7cm;
+		/* margin: 10mm 10mm 10mm 10mm; */
+		/* change the margins as you want them to be. */
+	}
+}
+
+@media print {
+    .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+}
