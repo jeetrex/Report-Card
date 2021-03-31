@@ -1,17 +1,17 @@
 const excelToJson = require('convert-excel-to-json');
 
 const result = excelToJson({
-	sourceFile: './data/Class LKG - Examination Results.xlsx',
+	sourceFile: './data/Class 8 - Examination Results.xlsx',
 	header: {
 		rows: 3,
 	}, 
 }); 
- 
+  
 students = result.Class; 
 
 console.log(students);  
 
-// load the things we need 
+// load the things we need  
 var express = require('express');  
 var app = express();
 app.use(express.static(__dirname + '/public'));
@@ -23,9 +23,9 @@ app.set('view engine', 'ejs');
  
 // index page
 app.get('/', function (req, res) {
-	res.render('pages/junior', { students: students });
+	res.render('pages/classsenior', { students: students });
 });
 
 app.listen(8080); 
-console.log('8080 is the magic port');   
+console.log('8080 is the magic port');     
       
