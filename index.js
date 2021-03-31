@@ -1,7 +1,7 @@
 const excelToJson = require('convert-excel-to-json');
 
 const result = excelToJson({
-	sourceFile: './data/Class 8 - Examination Results.xlsx',
+	sourceFile: './data/Class 8 - Examination Results.xlsx', 
 	header: {
 		rows: 3,
 	}, 
@@ -14,10 +14,10 @@ console.log(students);
 // load the things we need  
 var express = require('express');  
 var app = express();
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));  
 
 // set the view engine to ejs
-app.set('view engine', 'ejs');  
+app.set('view engine', 'ejs');   
 
 // use res.render to load up an ejs view file
  
