@@ -2,13 +2,27 @@ body {
 	font-family: 'Inter', sans-serif;
 }
 
-h1,
+h1 {
+	font-family: 'Poppins';
+}
+
 h3 {
 	font-weight: 800;
 }
 h5 {
 	font-size: small;
 	font-weight: 600;
+}
+
+.page {
+	width: 21cm;
+	height: 29.7cm;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 5fr 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
 }
 
 .school-details {
@@ -42,11 +56,16 @@ h5 {
 	width: auto;
 }
 
-.marks-detail{
-       font-size: 10px;
-       	font-weight: 600;
+.marks-detail {
+	font-size: 10px;
+	font-weight: 600;
 	text-align: center;
 }
+
+/* .footer{
+   position: absolute;
+    bottom: 2px;
+} */
 
 @media print {
 	body {
@@ -58,5 +77,7 @@ h5 {
 }
 
 @media print {
-    .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+	.pagebreak {
+		page-break-after: always;
+	} /* page-break-after works, as well */
 }
