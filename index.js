@@ -3,11 +3,11 @@ const excelToJson = require('convert-excel-to-json');
 const result = excelToJson({
 	sourceFile: './data/Class 8 - Examination Results.xlsx', 
 	header: {
-		rows: 3,
+		rows: 2,
 	}, 
 }); 
   
-students = result.Class; 
+students = result.Sheet1; 
 
 console.log(students);  
 
