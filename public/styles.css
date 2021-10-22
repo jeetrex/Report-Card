@@ -29,6 +29,18 @@ h5 {
 	padding: 2% 0 0 0;
 	text-align: center;
 }
+
+.school-banner h5{
+   line-height: 0.7;
+   font-size:smaller;
+}
+
+.school-banner h4{
+   letter-spacing: -1px;
+   font-size:medium;
+   font-weight:600;
+}
+
 .session {
 	padding: 2% 0 0 0;
 }
@@ -52,8 +64,11 @@ h5 {
 }
 
 .logo {
+   padding-left: 3rem;
+   padding-top: 1rem;
 	height: 120px;
 	width: auto;
+   z-index: -1;
 }
 
 .marks-detail {
