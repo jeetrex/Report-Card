@@ -21,7 +21,7 @@
 					<img class="logo position-absolute" src="./images/Arcadia-Logo.png" alt="" />
 					<section class="school-details d-flex justify-content-center px-4 py-2 mb-auto">
 						<div class="school-banner d-flex flex-column justify-content-center pt-4">
-							<h1>THE ARCADIA SCHOOL</h1>
+							<h1>The Arcadia School</h1>
 							<h5>C.B.S.E AFFILIATION NUMBER: 3530545, SCHOOL CODE: 81965</h5>
 							<h5>JHAJRA, CHAKRATA ROAD, DEHRADUN</h5>
 							<h5>E-MAIL: the.arcadia.school@outlook.com</h5>
@@ -37,27 +37,27 @@
 								<tbody>
 									<tr>
 										<td class="row-detail">Student Name:</td>
-										<td><%= student.C %></td>
+										<td class="student-char"><%= student.C %></td>
 										<td class="row-detail">Roll Number:</td>
-										<td><%= student.A %></td>
+										<td class="student-char"><%= student.A %></td>
 									</tr>
 									<tr>
 										<td class="row-detail">Father Name:</td>
-										<td><%= student.G %></td>
+										<td class="student-char"><%= student.G %></td>
 										<td class="row-detail">Admission Number:</td>
-										<td><%= student.B %></td>
+										<td class="student-char"><%= student.B %></td>
 									</tr>
 									<tr>
 										<td class="row-detail">Mother Name:</td>
-										<td><%= student.H %></td>
+										<td class="student-char"><%= student.H %></td>
 										<td class="row-detail">Class:</td>
-										<td><%= student.E %></td>
+										<td class="student-char"><%= student.E %></td>
 									</tr>
 									<tr>
 										<td class="row-detail">Contact:</td>
-										<td><%= student.D %></td>
+										<td class="student-char"><%= student.D %></td>
 										<td class="row-detail">Date of Birth:</td>
-										<td><%= student.F %></td>
+										<td class="student-char"><%= student.F %></td>
 									</tr>
 								</tbody>
 							</table>
@@ -76,11 +76,20 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
+									<tr class="align-middle">
 										<th scope="row">Subject</th>
-										<td class="detail">Periodic Test - 1</td>
-										<td class="detail">Half Yearly</td>
-										<td class="detail">Total Marks</td>
+										<td class="detail">
+											<p>Periodic Test - 1</p>
+											<p class="total-marks">20 Marks</p>
+										</td>
+										<td class="detail">
+											<p>Half Yearly</p>
+											<p class="total-marks">80 Marks</p>
+										</td>
+										<td class="detail">
+											<p>Total Marks</p>
+											<p class="total-marks">100 Marks</p>
+										</td>
 										<td class="detail">Percentage</td>
 										<td class="detail">Grade</td>
 									</tr>

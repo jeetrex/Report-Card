@@ -4,12 +4,15 @@ body {
 }
 
 h1 {
-	font-family: 'Poppins';
+	font-family: 'Questrial';
+   font-weight: 600;
+   letter-spacing: -0.5px;
 }
 
 h3 {
 	font-weight: 800;
 }
+
 h5 {
 	font-size: small;
 	font-weight: 600;
@@ -18,17 +21,7 @@ h5 {
 .page {
 	width: 8.3in;
 	height: 11.8in;
-   page-break-after: always;
-}
-
-.within {
-	height: 97%;
-	/* display: inline-block; */
-	/* display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 5fr 1fr;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px; */
+	page-break-after: always;
 }
 
 .school-details {
@@ -38,11 +31,14 @@ h5 {
 
 .school-banner h5 {
 	line-height: 0.7;
+   letter-spacing: -0.7px;
 	font-size: smaller;
 }
-
+.student-char{
+ font-weight: 500;
+}
 .school-banner h4 {
-	letter-spacing: -1px;
+	letter-spacing: -0.8px;
 	font-size: medium;
 	font-weight: 600;
 }
@@ -50,6 +46,7 @@ h5 {
 .session {
 	padding: 2% 0 0 0;
 }
+
 .student-details {
 	padding: 2% 0 0 0;
 }
@@ -59,20 +56,30 @@ h5 {
 }
 .marks {
 	text-align: center;
+   font-size: medium;
+}
+.total-marks {
+	font-size: 0.8rem;
 }
 .detail {
 	font-size: medium;
 	font-weight: 600;
 	text-align: center;
+   line-height: 0.5rem;
+   margin: 0;
+}
+
+.detail p{
+   line-height: 0.5rem;
 }
 .signatures {
 	padding: 2%;
 }
 
 .logo {
-	padding-left: 1rem;
-	padding-top: 2rem;
-	height: auto;
+	padding-left: 2rem;
+	padding-top: 2.2rem;
+	height: 15%;
 	width: auto;
 	z-index: -1;
 }
