@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8" />
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel = "stylesheet"
+          integrity = "sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+          crossorigin = "anonymous" />
+    <link rel = "preconnect" href = "https://fonts.googleapis.com" />
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
+    <link href = "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Questrial&display=swap"
+          rel = "stylesheet" />
+    <title>Document</title>
+    <link rel = "stylesheet" href = "styles_tw.css" />
+</head>
+
+<body>
+<% students.forEach(student=> { %>
+    <div class = "page d-flex flex-column justify-content-center align-items-center">
+        <div class = "border rounded-3 border-2 border-dark within overflow-auto">
+            <div class = "header">
+                <!-- Header -->
+                <img class = "logo position-absolute" src = "./images/Arcadia-Logo.png" alt = "" />
+                <section class = "school-details d-flex justify-content-center px-4 py-2 mb-auto">
+                    <div class = "school-banner d-flex flex-column justify-content-center pt-4">
+                        <h1>The Arcadia School</h1>
+                        <h5>C.B.S.E AFFILIATION NUMBER: 3530545, SCHOOL CODE: 81965</h5>
+                        <h5>JHAJRA, CHAKRATA ROAD, DEHRADUN</h5>
+                        <h5>E-MAIL: the.arcadia.school@outlook.com</h5>
+                        <h4 class = "session">ACADEMIC SESSION 2021-2022</h4>
+                    </div>
+                </section>
+            </div>
+            <div class = "middle">
+                <!-- Student Details -->
+                <section>
+                    <div class = "student-details px-4 py-2">
+                        <table class = "table table-borderless table-sm">
+                            <tbody>
+                            <tr>
+                                <td class = "row-detail">Student Name:</td>
+                                <td class = "student-char"><%= student.C %></td>
+                                <td class = "row-detail">Roll Number:</td>
+                                <td class = "student-char"><%= student.A %></td>
+                            </tr>
+                            <tr>
+                                <td class = "row-detail">Father Name:</td>
+                                <td class = "student-char"><%= student.G %></td>
+                                <td class = "row-detail">Admission Number:</td>
+                                <td class = "student-char"><%= student.B %></td>
+                            </tr>
+                            <tr>
+                                <td class = "row-detail">Mother Name:</td>
+                                <td class = "student-char"><%= student.H %></td>
+                                <td class = "row-detail">Class:</td>
+                                <td class = "student-char"><%= student.E %></td>
+                            </tr>
+                            <tr>
+                                <td class = "row-detail">Contact:</td>
+                                <td class = "student-char"><%= student.D %></td>
+                                <td class = "row-detail">Date of Birth:</td>
+                                <td class = "student-char"><%= student.F %></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Student Performance -->
+                <section>
+                    <div class = "px-4 py-1">
+                        <table class = "table table-bordered marks border-dark">
+                            <thead>
+                            <tr>
+                                <th scope = "col">SCHOLASTIC AREA</th>
+                                <th scope = "col" colspan = "3">TERM 1</th>
+                                <th scope = "col" colspan = "3">TERM 2</th>
+                                <th scope = "col" colspan = "3">OVERALL</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class = "align-middle">
+                                <th scope = "row">Subject</th>
+                                <td class = "detail">
+                                    <p>Th.</p>
+                                </td>
+                                <td class = "detail">
+                                    <p>Prac.</p>
+                                </td>
+                                <td class = "detail">
+                                    <p>Total</p>
+                                    <p class = "total-marks">(100)</p>
+                                </td>
+                                <td class = "detail">
+                                    <p>Th.</p>
+                                </td>
+                                <td class = "detail">
+                                    <p>Prac.</p>
+                                </td>
+                                <td class = "detail">
+                                    <p>Total</p>
+                                    <p class = "total-marks">(100)</p>
+                                </td>
+                                <td class = "detail">
+                                    <p>Total</p>
+                                    <p class = "total-marks">(<%= student.BB %>)</p>
+                                </td>
+                                <td class = "detail">Percent</td>
+                                <td class = "detail">Grade</td>
+                            </tr>
+                            <tr>
+                                <th scope = "row" class = "text-start">English</th>
+                                <td><%= student.I %></td>
+                                <td><%= student.O %></td>
+                                <td><%= (student.I == 'Ab' || student.I == 'ML' ? 0 : student.I) + (student.O == 'Ab' || student.O == 'ML' ? 0 : student.O) %></td>
+                                <td><%= student.U %></td>
+                                <td><%= student.AA %></td>
+                                <td><%= (student.U == 'Ab' || student.U == 'ML' ? 0 : student.U) + (student.AA == 'Ab' || student.AA == 'ML' ? 0 : student.AA) %></td>
+                                <td><%= student.AG %></td>
+                                <td><%= student.AM %>%</td>
+                                <td><%= student.AS %></td>
+                            </tr>
+                            <tr>
+                                <th scope = "row" class = "text-start">Physics</th>
+                                <td><%= student.J %></td>
+                                <td><%= student.P %></td>
+                                <td><%= (student.J == 'Ab' || student.J == 'ML' ? 0 : student.J) + (student.P == 'Ab' || student.P == 'ML' ? 0 : student.P) %></td>
+                                <td><%= student.V %></td>
+                                <td><%= student.AB %></td>
+                                <td><%= (student.V == 'Ab' || student.V == 'ML' ? 0 : student.V) + (student.AB == 'Ab' || student.AB == 'ML' ? 0 : student.AB) %></td>
+                                <td><%= student.AH %></td>
+                                <td><%= student.AN %>%</td>
+                                <td><%= student.AT %></td>
+                            </tr>
+                            <tr>
+                                <th scope = "row" class = "text-start">Chemistry</th>
+                                <td><%= student.K %></td>
+                                <td><%= student.Q %></td>
+                                <td><%= (student.K == 'Ab' || student.K == 'ML' ? 0 : student.K) + (student.Q == 'Ab' || student.Q == 'ML' ? 0 : student.Q) %></td>
+                                <td><%= student.W %></td>
+                                <td><%= student.AC %></td>
+                                <td><%= (student.W == 'Ab' || student.W == 'ML' ? 0 : student.W) + (student.AC == 'Ab' || student.AC == 'ML' ? 0 : student.AC) %></td>
+                                <td><%= student.AI %></td>
+                                <td><%= student.AO %>%</td>
+                                <td><%= student.AU %></td>
+                            </tr>
+                            <tr>
+                                <th scope = "row" class = "text-start">Mathematics</th>
+                                <td><%= student.L %></td>
+                                <td><%= student.R %></td>
+                                <td><%= (student.L == 'Ab' || student.L == 'ML' ? 0 : student.L) + (student.R == 'Ab' || student.R == 'ML' ? 0 : student.R) %></td>
+                                <td><%= student.X %></td>
+                                <td><%= student.AD %></td>
+                                <td><%= (student.X == 'Ab' || student.X == 'ML' ? 0 : student.X) + (student.AD == 'Ab' || student.AD == 'ML' ? 0 : student.AD) %></td>
+                                <td><%= student.AJ %></td>
+                                <td><%= student.AP %>%</td>
+                                <td><%= student.AV %></td>
+                            </tr>
+                            <tr>
+                                <th scope = "row" class = "text-start">Phy. Education</th>
+                                <td><%= student.M %></td>
+                                <td><%= student.S %></td>
+                                <td><%= (student.M == 'Ab' || student.M == 'ML' ? 0 : student.M) + (student.S == 'Ab' || student.S == 'ML' ? 0 : student.S) %></td>
+                                <td><%= student.Y %></td>
+                                <td><%= student.AE %></td>
+                                <td><%= (student.Y == 'Ab' || student.Y == 'ML' ? 0 : student.Y) + (student.AE == 'Ab' || student.AE == 'ML' ? 0 : student.AE) %></td>
+                                <td><%= student.AK %></td>
+                                <td><%= student.AQ %>%</td>
+                                <td><%= student.AW %></td>
+                            </tr>
+                            <tr>
+                                <th scope = "row" class = "text-start">Painting</th>
+                                <td><%= student.N %></td>
+                                <td><%= student.T %></td>
+                                <td><%= (student.N == 'Ab' || student.N == 'ML' ? 0 : student.N) + (student.T == 'Ab' || student.T == 'ML' ? 0 : student.T) %></td>
+                                <td><%= student.Z %></td>
+                                <td><%= student.AF %></td>
+                                <td><%= (student.Z == 'Ab' || student.Z == 'ML' ? 0 : student.Z) + (student.AF == 'Ab' || student.AF == 'ML' ? 0 : student.AF) %></td>
+                                <td><%= student.AL %></td>
+                                <td><%= student.AR %>%</td>
+                                <td><%= student.AX %></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class = "px-4 py-1">
+                    <p>** Th. - Theory, Prac. - Practical</p>
+                </section>
+
+                <!-- Student Overall Performance -->
+                <section>
+                    <div class = "summary px-4 py-1">
+                        <table class = "table table-bordered border-dark">
+                            <tbody>
+                            <tr>
+                                <td class = "detail">Maximum Marks</td>
+                                <td class = "detail"><%= student.AY %></td>
+                                <td class = "detail">Marks Obtained</td>
+                                <td class = "detail"><%= student.AZ %></td>
+                                <td class = "detail">Percentage</td>
+                                <td class = "detail"><%= student.BA %>%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Signatures -->
+                <section>
+                    <div class = "signatures px-4 py-1">
+                        <table class = "table table-borderless">
+                            <tbody>
+                            <tr>
+                                <td class = "detail"></td>
+                                <td class = "detail"></td>
+                            </tr>
+                            <tr>
+                                <td class = "detail">Mr. Ashish Gusain</td>
+                                <td class = "detail">Mrs. Gurpreet Kohli</td>
+                            </tr>
+                            <tr>
+                                <td class = "detail">CLASS TEACHER</td>
+                                <td class = "detail">PRINCIPAL</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            <div class = "footer mt-auto align-items-end">
+                <div class = "px-4 py-1">
+                    <table class = "table table-bordered border-dark">
+                        <tbody>
+                        <tr>
+                            <td class = "marks-detail">Marks Range</td>
+                            <td class = "marks-detail">91-100%</td>
+                            <td class = "marks-detail">81-90%</td>
+                            <td class = "marks-detail">71-80%</td>
+                            <td class = "marks-detail">61-70%</td>
+                            <td class = "marks-detail">51-60%</td>
+                            <td class = "marks-detail">41-50%</td>
+                            <td class = "marks-detail">33-40%</td>
+                            <td class = "marks-detail">32 & below</td>
+                        </tr>
+                        <tr>
+                            <td class = "marks-detail">Grade</td>
+                            <td class = "marks-detail">A1</td>
+                            <td class = "marks-detail">A2</td>
+                            <td class = "marks-detail">B1</td>
+                            <td class = "marks-detail">B2</td>
+                            <td class = "marks-detail">C1</td>
+                            <td class = "marks-detail">C2</td>
+                            <td class = "marks-detail">D</td>
+                            <td class = "marks-detail">E</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<% }) %>
+</body>
+</html>

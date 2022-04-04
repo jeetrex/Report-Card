@@ -9,7 +9,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Questrial&display=swap" rel="stylesheet" />
 		<title>Document</title>
-		<link rel="stylesheet" href="styles.css" />
+		<link rel = "stylesheet" href = "styles.css" />
 	</head>
 
 	<body>
@@ -32,7 +32,7 @@
 				<div class="middle">
 					<!-- Student Details -->
 					<section>
-						<div class="student-details px-4 py-2">
+						<div class="student-details px-4 py-1">
 							<table class="table table-borderless table-sm">
 								<tbody>
 									<tr>
@@ -66,96 +66,121 @@
 
 					<!-- Student Performance -->
 					<section>
-						<div class="px-4 py-2">
+						<div class="px-4 py-1">
 							<table class="table table-bordered marks border-dark">
 								<thead>
-									<tr>
-										<th scope="col">SCHOLASTIC AREA</th>
-										<th scope="col" colspan="2">TERM 1</th>
-										<th scope="col" colspan="3">OVERALL</th>
-									</tr>
+								<tr>
+									<th scope = "col" class="main-header">SCHOLASTIC AREA</th>
+									<th scope = "col" colspan = "2">TERM 1</th>
+									<th scope = "col" colspan = "2">TERM 2</th>
+									<th scope = "col" colspan = "3">OVERALL</th>
+								</tr>
 								</thead>
 								<tbody>
-									<tr class="align-middle">
-										<th scope="row">Subject</th>
-										<td class="detail">
-											<p>Periodic Test - 1</p>
-											<p class="total-marks">20 Marks</p>
-										</td>
-										<td class="detail">
-											<p>Half Yearly</p>
-											<p class="total-marks">80 Marks</p>
-										</td>
-										<td class="detail">
-											<p>Total Marks</p>
-											<p class="total-marks">100 Marks</p>
-										</td>
-										<td class="detail">Percentage</td>
-										<td class="detail">Grade</td>
-									</tr>
+								<tr class = "align-middle">
+									<th scope = "row">Subject</th>
+									<td class = "detail">
+										<p>PT-1</p>
+										<p class = "total-marks">(20)</p>
+									</td>
+									<td class = "detail">
+										<p>HY</p>
+										<p class = "total-marks">(80)</p>
+									</td>
+									<td class = "detail">
+										<p>PT-2</p>
+										<p class = "total-marks">(20)</p>
+									</td>
+									<td class = "detail">
+										<p>FINAL</p>
+										<p class = "total-marks">(80)</p>
+									</td>
+									<td class = "detail">
+										<p>Total</p>
+										<p class = "total-marks">(<%= student.BP %>)</p>
+									</td>
+									<td class = "detail">Percentage</td>
+									<td class = "detail">Grade</td>
+								</tr>
 									<tr>
 										<th scope="row" class="text-start">English</th>
 										<td><%= student.I %></td>
 										<td><%= student.Q %></td>
 										<td><%= student.Y %></td>
-										<td><%= student.AG %>%</td>
+										<td><%= student.AG %></td>
 										<td><%= student.AO %></td>
+										<td><%= student.AW %>%</td>
+										<td><%= student.BE %></td>
 									</tr>
 									<tr>
 										<th scope="row" class="text-start">Hindi</th>
 										<td><%= student.J %></td>
 										<td><%= student.R %></td>
 										<td><%= student.Z %></td>
-										<td><%= student.AH %>%</td>
+										<td><%= student.AH %></td>
 										<td><%= student.AP %></td>
+										<td><%= student.AX %>%</td>
+										<td><%= student.BF %></td>
 									</tr>
 									<tr>
 										<th scope="row" class="text-start">Mathematics</th>
 										<td><%= student.K %></td>
 										<td><%= student.S %></td>
 										<td><%= student.AA %></td>
-										<td><%= student.AI %>%</td>
+										<td><%= student.AI %></td>
 										<td><%= student.AQ %></td>
+										<td><%= student.AY %>%</td>
+										<td><%= student.BG %></td>
 									</tr>
 									<tr>
 										<th scope="row" class="text-start">Science</th>
 										<td><%= student.L %></td>
 										<td><%= student.T %></td>
 										<td><%= student.AB %></td>
-										<td><%= student.AJ %>%</td>
+										<td><%= student.AJ %></td>
 										<td><%= student.AR %></td>
+										<td><%= student.AZ %>%</td>
+										<td><%= student.BH %></td>
 									</tr>
 									<tr>
 										<th scope="row" class="text-start">Social Science</th>
 										<td><%= student.M %></td>
 										<td><%= student.U %></td>
 										<td><%= student.AC %></td>
-										<td><%= student.AK %>%</td>
+										<td><%= student.AK %></td>
 										<td><%= student.AS %></td>
+										<td><%= student.BA %>%</td>
+										<td><%= student.BI %></td>
 									</tr>
 									<tr>
 										<th scope="row" class="text-start">Sanskrit</th>
 										<td><%= student.N %></td>
 										<td><%= student.V %></td>
 										<td><%= student.AD %></td>
-										<td><%= student.AL %>%</td>
+										<td><%= student.AL %></td>
 										<td><%= student.AT %></td>
+										<td><%= student.BB %>%</td>
+										<td><%= student.BJ %></td>
 									</tr>
 									<tr>
 										<th scope="row" class="text-start">General Knowledge</th>
 										<td><%= student.O %></td>
 										<td><%= student.W %></td>
 										<td><%= student.AE %></td>
-										<td><%= student.AM %>%</td>
+										<td><%= student.AM %></td>
 										<td><%= student.AU %></td>
+										<td><%= student.BC %>%</td>
+										<td><%= student.BK %></td>
 									</tr>
 									<tr>
 										<th scope="row" class="text-start">Computer Science</th>
 										<td><%= student.P %></td>
 										<td><%= student.X %></td>
 										<td><%= student.AF %></td>
-										<td><%= student.AN %>%</td>
+										<td><%= student.AN %></td>
 										<td><%= student.AV %></td>
+										<td><%= student.BD %>%</td>
+										<td><%= student.BL %></td>
 									</tr>
 								</tbody>
 							</table>
@@ -164,16 +189,16 @@
 
 					<!-- Student Overall Performance -->
 					<section>
-						<div class="summary px-4 py-2">
+						<div class="summary px-4 py-1">
 							<table class="table table-bordered border-dark">
 								<tbody>
 									<tr>
 										<td class="detail">Maximum Marks</td>
-										<td class="detail"><%= student.AW %></td>
+										<td class="detail"><%= student.BM %></td>
 										<td class="detail">Marks Obtained</td>
-										<td class="detail"><%= student.AX %></td>
+										<td class="detail"><%= student.BN %></td>
 										<td class="detail">Percentage</td>
-										<td class="detail"><%= student.AY %>%</td>
+										<td class="detail"><%= student.BO %>%</td>
 									</tr>
 								</tbody>
 							</table>
@@ -182,7 +207,7 @@
 
 					<!-- Signatures -->
 					<section>
-						<div class="signatures px-4 py-2">
+						<div class="signatures px-4 py-1">
 							<table class="table table-borderless">
 								<tbody>
 									<tr>
@@ -190,7 +215,7 @@
 										<td class="detail"></td>
 									</tr>
 									<tr>
-										<td class="detail">Ms. Shashi Singh</td>
+										<td class="detail">Mrs. Pushpa Sharma</td>
 										<td class="detail">Mrs. Gurpreet Kohli</td>
 									</tr>
 									<tr>
@@ -203,7 +228,7 @@
 					</section>
 				</div>
 				<div class="footer mt-auto align-items-end">
-					<div class="px-4 py-2">
+					<div class="px-4 py-1">
 						<table class="table table-bordered border-dark">
 							<tbody>
 								<tr>
