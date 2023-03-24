@@ -1,112 +1,124 @@
 * {
-    margin  : 0;
-    padding : 0;
-    }
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    font-family : 'Inter', sans-serif;
-    margin      : 0;
-    }
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
 
 h1 {
-    font-family    : 'Questrial';
-    font-weight    : 600;
-    letter-spacing : -0.5px;
-    }
+  font-family: "Inter";
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
 
 h3 {
-    font-weight : 800;
-    }
+  font-weight: 800;
+}
 
 h5 {
-    font-size   : small;
-    font-weight : 600;
-    }
+  font-size: small;
+  font-weight: 600;
+}
 
 .page {
-    /*width            : 20.5cm;*/
-    /*height           : 30cm;*/
-    page-break-after : always;
-    }
+  /*width            : 20.5cm;*/
+  /*height           : 30cm;*/
+  page-break-after: always;
+}
 
 .school-details {
-    padding    : 2% 0 0 0;
-    text-align : center;
-    }
+  padding: 2% 0 0 0;
+  text-align: center;
+}
 
 .school-banner h5 {
-    line-height    : 0.7;
-    letter-spacing : -0.7px;
-    font-size      : smaller;
-    }
+  line-height: 0.7;
+  letter-spacing: -0.7px;
+  font-size: smaller;
+}
 
 .student-char {
-    font-weight : 500;
-    }
+  font-weight: 500;
+}
 
 .school-banner h4 {
-    letter-spacing : -0.8px;
-    font-size      : medium;
-    font-weight    : 600;
-    }
+  letter-spacing: -0.8px;
+  font-size: medium;
+  font-weight: 600;
+}
 
 .session {
-    padding : 2% 0 0 0;
-    }
+  padding: 2% 0 0 0;
+}
 
 .student-details {
-    padding : 2% 0 0 0;
-    }
+  padding: 2% 0 0 0;
+}
 
 .row-detail {
-    font-weight : 600;
-    font-size   : medium;
-    }
+  font-weight: 600;
+  font-size: medium;
+}
 
 .marks {
-    text-align : center;
-    font-size  : medium;
-    }
+  text-align: center;
+  font-size: medium;
+}
 
 .total-marks {
-    font-size : 0.8rem;
-    }
+  font-size: 0.8rem;
+}
 
 .detail {
-    font-size   : medium;
-    font-weight : 600;
-    text-align  : center;
-    line-height : 0.5rem;
-    margin      : 0;
-    }
+  font-size: medium;
+  font-weight: 600;
+  text-align: center;
+  line-height: 0.5rem;
+  margin: 0;
+}
 
 .detail p {
-    margin: 0;
-    padding: 0.5rem 0 0 0;
-    line-height : 0.5rem;
-    }
+  margin: 0;
+  padding: 0.5rem 0 0 0;
+  line-height: 0.5rem;
+}
 
 .signatures {
-    padding : 2%;
-    }
+  padding: 2%;
+}
 
 .logo {
-    padding-left : 2rem;
-    padding-top  : 2.2rem;
-    height       : 12%;
-    width        : auto;
-    z-index      : -1;
-    }
+  padding-left: 2rem;
+  padding-top: 2.2rem;
+  height: 8.5rem;
+  width: auto;
+  z-index: -1;
+}
 
 .marks-detail {
-    font-size   : 5px;
-    font-weight : 600;
-    text-align  : center;
-    line-height: normal;
-    }
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: normal;
+}
+
+.att-head {
+  font-weight: 700;
+}
+
+.att-text {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  /* MAke underline dots smaller */
+    text-decoration-thickness: 1px;
+}
 
 @media print {
-    .pagebreak {
-        page-break-after : always;
-        }
-    }
+  .pagebreak {
+    page-break-after: always;
+  }
+}
