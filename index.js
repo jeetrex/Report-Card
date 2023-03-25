@@ -1,7 +1,7 @@
 const excelToJson = require('convert-excel-to-json');
 
 const result = excelToJson({
-	sourceFile: './data/Class NUR - Examination Results.xlsx',
+	sourceFile: './data/Class LKG - Examination Results.xlsx',
 	header: {
 		rows: 2,
 	},
