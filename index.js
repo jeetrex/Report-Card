@@ -1,7 +1,7 @@
 const excelToJson = require('convert-excel-to-json');
 
 const result = excelToJson({
-	sourceFile: './data/Class LKG - Examination Results.xlsx',
+	sourceFile: './data/Class 11 - Examination Results(ACC-PE).xlsx',
 	header: {
 		rows: 2,
 	},
@@ -23,7 +23,7 @@ app.set('view engine', 'ejs');
 
 // index page
 app.get('/', function (req, res) {
-	res.render('pages/class1_5_tw_jun', { students: students });
+	res.render('pages/class11_ACC-PE', { students: students });
 });
 
 app.listen(8080);
